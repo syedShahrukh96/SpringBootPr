@@ -1,15 +1,26 @@
 
 N
-java:S1602",Remove useless curly braces around statement(¸éâçıÿÿÿÿ8ë‚±íå1
-]	java:S125"<This block of commented-out lines of code should be removed.(Àİ† ÿÿÿÿÿ8ì‚±íå1
-X	java:S125"<This block of commented-out lines of code should be removed.(Ó«›š8ì‚±íå1
-]	java:S125"<This block of commented-out lines of code should be removed.(şÑüØüÿÿÿÿ8ì‚±íå1
-X	java:S125"<This block of commented-out lines of code should be removed.(±¤ğ8ì‚±íå1
-R
-java:S11440"5Remove this unused private "queryForStudents" method.(ˆòÓÇ8ñ‚±íå1
-M
-java:S1144;"0Remove this unused private "readStudent" method.(ûÂßâ8ñ‚±íå1
-]
-java:S1144P";Remove this unused private "createMultipleStudents" method.(¼ëñÁùÿÿÿÿ8ñ‚±íå1
+java:S1602",Remove useless curly braces around statement(¸éâçıÿÿÿÿ8‰¡©”æ1
+]	java:S125"<This block of commented-out lines of code should be removed.(Àİ† ÿÿÿÿÿ8é–á“æ1
+]	java:S125"<This block of commented-out lines of code should be removed.(şÑüØüÿÿÿÿ8é–á“æ1
+X	java:S125"<This block of commented-out lines of code should be removed.(±¤ğ8é–á“æ1
+]	java:S125"<This block of commented-out lines of code should be removed.(ÚòÀ¬úÿÿÿÿ8é–á“æ1
+]	java:S125!"<This block of commented-out lines of code should be removed.(ö×Ñœşÿÿÿÿ8é–á“æ1
+X	java:S125#"<This block of commented-out lines of code should be removed.(«ˆ¸Á8é–á“æ1
+W	java:S125%"<This block of commented-out lines of code should be removed.(ÏÒŞ8¥û¨”æ1
+i
+java:S1128"GRemove this unused import 'ch.qos.logback.core.net.SyslogOutputStream'.(Şïıİûÿÿÿÿ8ªû¨”æ1
+W
+java:S1144*"5Remove this unused private "deleteAllStudent" method.(ûˆøÍøÿÿÿÿ8«û¨”æ1
 T
-java:S1144["2Remove this unused private "createStudent" method.(¼‚Úøùÿÿÿÿ8ñ‚±íå1
+java:S11441"2Remove this unused private "deleteStudent" method.(¢‘£¸şÿÿÿÿ8ò–á“æ1
+N
+java:S11448"2Remove this unused private "updateStudent" method.(ÓŒZ8ó–á“æ1
+[
+java:S1144J"?Remove this unused private "queryForStudentsByLastName" method.(Ê‰8ó–á“æ1
+R
+java:S1144W"5Remove this unused private "queryForStudents" method.(ˆòÓÇ8ó–á“æ1
+M
+java:S1144b"0Remove this unused private "readStudent" method.(ûÂßâ8ó–á“æ1
+U
+java:S1144‚"2Remove this unused private "createStudent" method.(¼‚Úøùÿÿÿÿ8ô–á“æ1

@@ -1,5 +1,6 @@
 package com.shahrukh.crud_demo;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.shahrukh.crud_demo.dao.StudentDAO;
 import com.shahrukh.crud_demo.entity.Student;
 import org.springframework.boot.CommandLineRunner;
@@ -21,15 +22,53 @@ public class CrudDemoApplication {
 		return runner -> {
 			//createStudent(studentDAO);
 
-			//createMultipleStudents(studentDAO);
+			createMultipleStudents(studentDAO);
 
 			//readStudent(studentDAO);
 
 			//queryForStudents(studentDAO);
 
-			queryForStudentsByLastName(studentDAO);
+			//queryForStudentsByLastName(studentDAO);
+
+			//updateStudent(studentDAO);
+
+			//deleteStudent(studentDAO);
+
+			//deleteAllStudent(studentDAO);
 
 		};
+	}
+
+	private void deleteAllStudent(StudentDAO studentDAO) {
+
+		System.out.println("Deleting all student");
+		int numberRowDeleted = studentDAO.deleteAll();
+		System.out.println("Deleted row count: "+numberRowDeleted);
+	}
+
+	private void deleteStudent(StudentDAO studentDAO) {
+
+		int studentId = 3;
+		System.out.println("Deleting student id: "+ studentId);
+		studentDAO.delete(studentId);
+	}
+
+	private void updateStudent(StudentDAO studentDAO) {
+
+		//retrieve student based on the id: primary key
+		int studentId = 1;
+		System.out.println("Getting student with id: "+ studentId);
+		Student myStudent = studentDAO.findById(studentId);
+
+		//change first name to "Scooby"
+		System.out.println("Updating student...");
+		myStudent.setFirstName("John");
+
+		//update the student
+		studentDAO.update(myStudent);
+
+		//display the updated student
+		System.out.println("Updated student "+myStudent);
 	}
 
 	private void queryForStudentsByLastName(StudentDAO studentDAO) {
